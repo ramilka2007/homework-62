@@ -1,15 +1,28 @@
-import {NavLink} from "react-router-dom";
+import { NavLink } from 'react-router-dom';
+import './Toolbar.css';
 
 const Toolbar = () => {
-    return (
-        <nav className="navbar navbar-dark bg-primary">
-            <div className="container-fluid">
-                <NavLink className="navbar-brand" to="/">Ramil</NavLink>
+  return (
+    <nav className="navbar navbar-dark bg-primary">
+      <div className="container-fluid">
+        <NavLink className="navbar-brand" to="/">
+          Ramil
+        </NavLink>
 
-                <NavLink className="nav-link" to="/">About me</NavLink>
-            </div>
-        </nav>
-    );
+        <div className="d-flex flex-row align-items-center gap-5">
+          <NavLink className="nav-link text-white" to="/">
+            About me
+          </NavLink>
+          <NavLink className="nav-link text-white" to="/portfolio">
+            Portfolio
+          </NavLink>
+          <NavLink className="nav-link text-white" to="/contacts">
+            Contacts
+          </NavLink>
+        </div>
+      </div>
+    </nav>
+  );
 };
 
 export default Toolbar;
