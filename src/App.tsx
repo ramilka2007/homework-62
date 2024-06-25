@@ -4,6 +4,9 @@ import { Link, Route, Routes } from 'react-router-dom';
 import AboutMe from './containers/AboutMe/AboutMe';
 import Portfolio from './containers/Portfolio/Portfolio';
 import Desk from './containers/Desk/Desk';
+import MakeBurger from './containers/MakeBurger/MakeBurger';
+import Contacts from './containers/Contacts/Contacts';
+import Usernames from './containers/Usernames/Usernames';
 
 const App = () => {
   return (
@@ -16,7 +19,10 @@ const App = () => {
           <Route path="/" element={<AboutMe />} />
           <Route path="/portfolio" element={<Portfolio />}>
             <Route path="game" element={<Desk />} />
+            <Route path="make-burger" element={<MakeBurger />} />
+            <Route path="usernames" element={<Usernames />} />
           </Route>
+          <Route path="/contacts" element={<Contacts />} />
           <Route
             path="*"
             element={

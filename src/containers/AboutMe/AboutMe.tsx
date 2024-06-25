@@ -4,12 +4,12 @@ import photo from '../../assets/myPhoto.jpg';
 const AboutMe = () => {
   return (
     <div>
-      <h1 className={'m-3'}>About me</h1>
+      <h1 className="m-3">About me</h1>
       <div className="info">
-        <div className="me d-flex">
-          <img src={`${photo}`} alt="me" className={'w-50'} />
+        <div className="d-flex gap-4">
+          <img src={`${photo}`} alt="me" className="w-50" />
           <div className="information">
-            <h4 style={{ lineHeight: 3 }}>
+            <h4 style={{ lineHeight: 3 }} className="text-start">
               My name is Ramil. I am 17. I live in Kyrgyzstan, Bishkek and I'm
               in the 11th grade. I've been going to programming for almost 9
               months now. In addition to programming, I study English. My good

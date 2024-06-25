@@ -3,7 +3,7 @@ import './Toolbar.css';
 
 const Toolbar = () => {
   return (
-    <nav className="navbar navbar-dark bg-primary">
+    <nav className="navbar navbar-dark bg-primary mb-4">
       <div className="container-fluid">
         <NavLink className="navbar-brand" to="/">
           Ramil
